@@ -11,7 +11,7 @@ export function HeroSection() {
   const { openModal } = useReservation();
 
   return (
-    <section className="relative min-h-[95vh] sm:min-h-screen flex items-end sm:items-center justify-center overflow-hidden bg-brand-ebony">
+    <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center overflow-hidden bg-brand-ebony">
       {/* Background Image with Cinematic Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -21,15 +21,15 @@ export function HeroSection() {
           priority
           className="object-cover object-center scale-105 transition-transform duration-1000 ease-out"
         />
-        {/* Layered luxury gradient: clear dining room view at top, deep ebony at bottom for text clarity */}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ebony via-brand-ebony/60 to-black/40 sm:to-brand-ebony/80" />
-        <div className="absolute inset-0 bg-brand-burgundy/25 mix-blend-multiply" />
+        {/* Layered luxury gradient for optimal editorial legibility on both mobile and desktop */}
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-ebony via-brand-ebony/65 to-brand-ebony/80" />
+        <div className="absolute inset-0 bg-brand-burgundy/35 mix-blend-multiply" />
       </div>
 
-      {/* Hero Content - Center Bottom on mobile, Centered on desktop */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-14 sm:pb-16">
+      {/* Hero Content - Centered */}
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 sm:pt-28 pb-12 sm:pb-16">
         {/* Main Headline - Balanced line breaks */}
-        <h1 className="font-serif text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-brand-light uppercase tracking-wide leading-[1.25] sm:leading-tight drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)]">
+        <h1 className="font-serif text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-brand-light uppercase tracking-wide leading-[1.25] sm:leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
           <span className="block">Flavours Sealed With</span>
           <span className="block mt-1 sm:mt-2">
             <span className="italic font-light text-brand-gold font-display lowercase mr-1.5 sm:mr-2">
@@ -40,7 +40,7 @@ export function HeroSection() {
         </h1>
 
         {/* Subtitle / Promise */}
-        <p className="mt-3 sm:mt-6 max-w-xl mx-auto text-xs sm:text-base md:text-lg text-brand-cream/90 font-sans font-light leading-relaxed drop-shadow-[0_1px_8px_rgba(0,0,0,0.95)] px-4">
+        <p className="mt-4 sm:mt-6 max-w-xl mx-auto text-xs sm:text-base md:text-lg text-brand-cream/90 font-sans font-light leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)] px-4">
           Where slow-cooking traditions meet vibrant regional Indian depth and progressive Asian favourites in Sector 104, Noida.
         </p>
 
